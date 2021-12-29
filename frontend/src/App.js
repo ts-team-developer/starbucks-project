@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import axios from 'axios'
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           url: '/home',
           method: 'GET'
         }).then((res) => {
+        	console.log(res)
           callback(res.data);
         })
       }, []
